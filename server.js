@@ -1,10 +1,8 @@
 var express = require("express")
 var app = express()
 
-app.get('/', function (req, res) {
-	res.send("test message")
-});
+app.use(express.static(__dirname + "/public"))
 
-app.listen(1997);
-console.log("server running since '97");
+app.listen(3000);
+console.log("running on port 3000");
 
