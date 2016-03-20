@@ -1,10 +1,10 @@
-var express = require("express");
-var app = express();
+var express = require("express")
+var app = express()
 
 app.get('/', function (req, res) {
-	res.send("hello from server.js")
+	res.send("test message")
 });
 
-app.listen(8000);
-console.log("server running on 8000");
+app.listen(1997);
+console.log("server running since '97");
 
