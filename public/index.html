@@ -25,12 +25,16 @@
 				<th>Address</th>
 			</tr>
 		</thead>
+
+		<tbody>
+			<tr ng-repeat = "contact in contactlist">
+			<td>{{contact.name}}</td>
+			<td>{{contact.email}}</td>
+			<td>{{contact.number}}</td>
+			</tr>
+		</tbody>
 	</table>
 </div>
-
-
-	<input ng-model="test">
-	{{test}}
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
 	<script src="controllers/controller.js"></script>
